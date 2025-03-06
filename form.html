@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  <form action="about.html" method="POST">
+    <label for="fname">First Name</label>
+    <input id="fname" type="text" name="fname"/>
+
+    <label for="lname">Last Name</label>
+    <input id="lname" type="text" name="lname"/>
+
+    <fieldset>
+      <legend>Gender:</legend>
+      <label><input type="radio" name="gender" value="male"/> Male</label>
+      <label><input type="radio" name="gender" value="female"/> Female</label>
+    </fieldset>
+
+    <label for="subscribe">
+      <input type="checkbox" id="subscribe" name="subscribe"/> 
+      Subscribe to our newsletter
+    </label>
+    
+
+    <input type="submit" value="click me"/>
+  </form>
+</body>
+</html>
