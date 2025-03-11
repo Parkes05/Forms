@@ -1,3 +1,14 @@
+#text {
+  color: blueviolet;
+}
+div p {
+  color: wheat;
+  background-color: blue;
+  display: inline;
+  border: 5px solid orange;
+  border-color: red;
+  border-radius: 20px;
+}
 .paragraph {
   color: green;
 }
@@ -12,9 +23,19 @@ p {
 p {
   color: red;
 }
-h1 {
-
-}
 .paragraph {
   color: yellow;
+}
+h1, h2, a {
+  color: yellow;
+}
+span {
+  background-color: blue;
+  display: block;
+}
+div {
+  background-color: aqua;
+  padding: 30px;
+  padding: 50px 10px;
+  padding: 5px 100px 20px 50px;
 }
