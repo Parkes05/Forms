@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & More</title>
+  <style>
+    .myButtonClass {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>DOM and Events</h1>
+  <p id="text">we want to change this text</p>
+  <button id="changeTextButton">Click Me</button>
+  <p id="moreText">we want to change this text</p>
+  <p>we want to change this text</p>
+  <p>we want to change this text</p>
+  <p>we want to change this text</p>
+  <img id="image" src="../assets/images/dog.jpeg" alt="image of a dog" width="300"/>
+
+
+  <script>
+    const text = document.getElementById("text")
+    const moreText = document.getElementById("moreText")
+    const button = document.getElementById("changeTextButton")
+    const image = document.getElementById("image")
+    
+    // console.log(message)
+    // console.log(button)
+    // console.log(message.id)
+    // console.log(button)
+
+    function updateTextAndImage() {
+      text.textContent = "Hello. The text has been changed"
+      moreText.textContent = "Yes. I am going to change to a different text"
+      image.src = "http://127.0.0.1:5500/assets/images/dog.png"
+      button.className = "myButtonClass"
+    }
+
+    button.addEventListener("click", updateTextAndImage)
+    // image.addEventListener("click", updateTextAndImage)
+
+
+
+
+
+    let fruits = ["Apple", "Banana", "Orange"]
+    console.log(fruits)
+    console.log(fruits[2])
+
+    fruits.push("phone")
+    console.log(fruits)
+    console.log(fruits[3])
+
+
+
+    let person = {
+      name: "Ben",
+      age: 20,
+      isStudent: true,
+      hasPhone: true,
+      hasLaptop: false,
+    }
+    console.log(person.name)
+    person.name = "Engr"
+    console.log(person)
+  </script>
+</body>
+</html>

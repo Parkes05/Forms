@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions and Events</title>
+</head>
+<body>
+  <h1>Functions and Events in JS</h1>
+
+  <script>
+
+    function greetUser() {
+      console.log("Hello")
+    }
+
+    greetUser()
+
+    function greetUser(name) {
+      console.log("Hello", name)
+    }
+
+    greetUser("Ben")
+    greetUser("Bob")
+
+    function addTwoNumbers(a, b) {
+      const sum = a + b
+      console.log(sum)
+    }
+
+    addTwoNumbers(5, 3)
+    addTwoNumbers(10, 5)
+    addTwoNumbers(100, 10)
+
+    function addTwoNumbers(a, b) {
+      const sum = a + b
+      return sum
+    }
+
+    const summedNumbers = addTwoNumbers(20, 100)
+    console.log(summedNumbers)
+
+
+    function addTwoNumbers(a, b) {
+      const sum = a + b
+      return sum
+    }
+
+    console.log(addTwoNumbers(addTwoNumbers(10,10), 50))
+
+    function multiplyTwoNumbers(a, b) {
+      return a * b
+    }
+
+    console.log(multiplyTwoNumbers(
+      multiplyTwoNumbers(
+        addTwoNumbers(20,20), 10
+      ), 2
+    ))
+
+    console.log(multiplyTwoNumbers(multiplyTwoNumbers(addTwoNumbers(20,20), 10), 2))
+  </script>
+</body>
+</html>
