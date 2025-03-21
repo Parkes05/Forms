@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methods</title>
+</head>
+<body>
+  <h1>Today is Methods!!</h1>
+
+  <script>
+    const numbers = [10, 11, 15, 20, 30, 40, 50, 25, 99]
+
+    function addTwoNumbers(a, b) {
+      console.log(a)
+      console.log(b)
+    }
+    const addTwoNumbers = (a, b) => {
+      console.log(a)
+      console.log(b)
+    }
+
+    numbers.forEach((num, index) => {
+      //beside number 1 on your keyboard
+      console.log(`Index ${index}: ${num} * 2 = ${num * 2}`)
+    })
+
+    const squares = numbers.map((num) => {
+      return num * 2
+    })
+    console.log(squares)
+
+    const evenNumbers = numbers.filter((num) => num % 2 === 0)
+    console.log(evenNumbers)
+
+    const summedNumbers = numbers.reduce((acc, num) => acc + num, 0)
+    console.log(summedNumbers)
+
+    const people = [
+      {
+        name: "Ben", 
+        age: 25
+      },
+      {
+        name: "Engr",
+        age: 30
+      },
+      {
+        name: "Emeka",
+        age: 40
+      }
+    ]
+
+    const findPerson = people.find((person) => person.age > 35)
+    console.log(findPerson)
+
+    const indexFound = people.findIndex((person) => person.name === "Ben")
+    console.log(indexFound)
+
+    const a = 10
+    const b = 10
+    console.log(a === b)
+
+    let fruits = ["Cherry", "apple", "Mango", "banana"]
+    console.log(fruits.sort())
+
+    const newFruits = fruits.map((fruit) => fruit.toLowerCase())
+    console.log(newFruits)
+    console.log(newFruits.sort())
+  </script>
+</body>
+</html>
